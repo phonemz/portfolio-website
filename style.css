@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
+
+body{
+    background-color: darkslategrey;
+    font-family: 'Georama';
+    font-weight: bold;
+}
+
+.container{
+    position: fixed;
+    top: 150px;
+    left: 400px;
+}
+
+.personal_info{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.navmenu{
+    font-size: 36px;
+    margin-left: 0;
+
+
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+    float: left;
+    margin-right: 60px;
+    margin-left: 0;
+    color: black;
+}
+li:hover{
+    color: rgb(225, 230, 161);
+}
