@@ -16,6 +16,7 @@ body{
     font-size: 28px;
     font-weight: bold;
     line-height: 40px;
+    color: blanchedalmond;
 }
 
 .navmenu{
@@ -33,8 +34,8 @@ li{
     float: left;
     margin-right: 60px;
     margin-left: 0;
-    color: black;
+    color: blanchedalmond;
 }
 li:hover{
-    color: rgb(225, 230, 161);
+    color: rgb(241, 152, 92);
 }
