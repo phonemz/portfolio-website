@@ -13,9 +13,9 @@
     <title>Phone Myint Zaw</title>
 </head>
 
-<body>
+<body id="light">
     <div class="change_theme">
-        <span id="change-theme-text">you can change theme here</span>
+        <span id="change-theme-text">dark mode here</span>
         <img id="arrow" src="image/swirly-arrow.png" alt="arrow pointing to dark mode icon">
         <img id="moon" src="image/moon-solid.svg" alt="dark mode">
     </div>
@@ -24,7 +24,7 @@
             Hi .. <br> I am Phone Myint Zaw. <br> A Web Dev who likes to do new things. <br>
             This is my portfolio website. <br> The nav menu that you are looking for is below.
         </div>
-        <div class="navmenu">
+        <div class="navmenu" id="light">
             <ul>
                 <a href="portfolio.html">
                     <li>Portfolio</li>
@@ -38,5 +38,12 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        document.querySelector("#moon").onclick = function(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>

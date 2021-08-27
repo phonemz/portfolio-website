@@ -5,6 +5,7 @@ body{
     font-family: 'Georama';
     font-weight: bold;
     margin: 0;
+    color: #1b4965;
 
 }
 .change_theme{
@@ -13,7 +14,6 @@ body{
     align-items: center;
 }
 #change-theme-text{
-    color: #1b4965;
 }
 #arrow{
     width: 30px;
@@ -32,7 +32,7 @@ body{
     font-size: 28px;
     font-weight: bold;
     line-height: 40px;
-    color: #1b4965;
+  
     
 }
 
@@ -44,14 +44,17 @@ body{
 ul{
     padding-left: 0;
 }
+
 li{
     list-style: none;
     display: flex;
     float: left;
     margin-right: 60px;
     margin-left: 0;
-    color:#1b4965;
+    color: #7f5539;
+
 }
+
 li:hover{
     transform: scale(1.1);
 }
@@ -61,4 +64,9 @@ li:hover{
     height: 30px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.dark-mode{
+    background: #1b4965;
+    color: #bee9e8;
 }
