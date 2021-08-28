@@ -15,7 +15,7 @@
 
 <body id="light">
     <div class="change_theme">
-        <span id="change-theme-text">dark mode here</span>
+        <span id="change-theme-text">the dark knight rises</span>
         <img id="arrow" src="image/swirly-arrow.png" alt="arrow pointing to dark mode icon">
         <img id="moon" src="image/moon-solid.svg" alt="dark mode">
     </div>
@@ -41,9 +41,19 @@
 
     <script>
         document.querySelector("#moon").onclick = function(){
-            var element = document.body;
+            let element = document.querySelector("#light");
             element.classList.toggle("dark-mode");
+            let span = document.querySelector("#change-theme-text");
+            if (span.textContent === "the dark knight rises")
+            {
+                span.textContent= "let there be light"
+            }
+            else
+            {
+                span.textContent= "the dark knight rises"
+            }
         }
+        
     </script>
 </body>
 </html>
