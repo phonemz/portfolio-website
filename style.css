@@ -6,6 +6,7 @@ body{
     font-weight: bold;
     margin: 0;
     color: #1b4965;
+    
 
 }
 .change_theme{
@@ -51,8 +52,9 @@ li{
     float: left;
     margin-right: 60px;
     margin-left: 0;
-    color: #7f5539;
-
+}
+a{
+    color: #1b4965
 }
 
 li:hover{

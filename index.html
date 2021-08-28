@@ -27,13 +27,13 @@
         <div class="navmenu" id="light">
             <ul>
                 <a href="portfolio.html">
-                    <li>Portfolio</li>
+                    <li id="link">Portfolio</li>
                 </a>
                 <a href="about.html">
-                    <li>About me</li>
+                    <li id="link1">About me</li>
                 </a>
                 <a href="contact.html">
-                    <li>Work with me</li>
+                    <li id="link2">Work with me</li>
                 </a>
             </ul>
         </div>
@@ -43,6 +43,7 @@
         document.querySelector("#moon").onclick = function(){
             let element = document.querySelector("#light");
             element.classList.toggle("dark-mode");
+            
             let span = document.querySelector("#change-theme-text");
             if (span.textContent === "the dark knight rises")
             {
@@ -52,6 +53,15 @@
             {
                 span.textContent= "the dark knight rises"
             }
+
+            var link = document.querySelector("#link")
+            link.classList.toggle("dark-mode")
+
+            var link = document.querySelector("#link1")
+            link.classList.toggle("dark-mode")
+
+            var link = document.querySelector("#link2")
+            link.classList.toggle("dark-mode")
         }
         
     </script>
