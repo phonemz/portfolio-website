@@ -8,19 +8,19 @@ body{
     color: #1b4965;
 }
 
-.change_theme{
+.change_theme, .change-theme-about{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#arrow{
+#arrow, #arrow-about{
     width: 30px;
     height: 30px;
     padding: 10px;
 }
 
-#moon{
+#moon, #moon-about{
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -39,29 +39,70 @@ body{
     line-height: 40px;
 }
 
-.navmenu > ul  {
+.navmenu > ul, .navmenu-about > ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding-left: 0;
 }
-.navmenu > ul > li{
+.navmenu > ul > li, .navmenu-about > ul > li{
     transition: transform 500ms;
 }
-.navmenu > ul > li > a{
+.navmenu > ul > li > a, .navmenu-about > ul > li > a{
     text-decoration: none;
     color: inherit;
     font-size: 25px;
 }
 
-li:hover{
+.navmenu > ul > li:hover, .navmenu-about > ul > li:hover{
     transform: scale(1.15);
 }
-
-
 
 .dark-mode{
     background: #1b4965;
     color: #bee9e8;
 }
+
+.header-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu-about > ul{
+    margin-left: 50px;
+    width: 500px;
+
+}
+
+.navmenu-about > ul > li > a{
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.container-about-me{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#about-me-header{
+    margin: 20px 0 0 50px;
+    font-size: 50px;
+}
+
+#about-me-body{
+    margin: 20px 20px 0 50px;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+#about-me-photo{
+    width: 260px;
+    height: auto;
+    margin: 60px 40px 0 0;
+    border-radius: 2%;
+}
+
+
 
