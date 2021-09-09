@@ -13,38 +13,34 @@
     <title>Phone Myint Zaw</title>
 </head>
 
-<body id="light">
+<body>
     <div class="change_theme">
         <span id="change-theme-text">the dark knight rises</span>
         <img id="arrow" src="image/swirly-arrow.png" alt="arrow pointing to dark mode icon">
         <img id="moon" src="image/moon-solid.svg" alt="dark mode">
     </div>
     <div class="container">
-        <div class="personal_info">
-            Hi .. <br> I am Phone Myint Zaw. <br> A Web Dev who likes to do new things. <br>
-            This is my portfolio website. <br> The nav menu that you are looking for is below.
+        <div class="hero">
+            <p id="hero">
+                Hi .. <br> I am Phone Myint Zaw. <br> A Web Dev who likes to do new things. <br>
+            </p>
         </div>
-        <div class="navmenu" id="light">
+        <div class="navmenu">
             <ul>
-                <a href="portfolio.html">
-                    <li id="link">Portfolio</li>
-                </a>
-                <a href="about.html">
-                    <li id="link1">About me</li>
-                </a>
-                <a href="contact.html">
-                    <li id="link2">Work with me</li>
-                </a>
+                <li><a href="projects.html">My projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Work with me</a></li>
             </ul>
         </div>
+
     </div>
 
     <script>
         document.querySelector("#moon").onclick = function(){
-            let element = document.querySelector("#light");
+            const element = document.body;
             element.classList.toggle("dark-mode");
             
-            let span = document.querySelector("#change-theme-text");
+            const span = document.querySelector("#change-theme-text");
             if (span.textContent === "the dark knight rises")
             {
                 span.textContent= "let there be light"
@@ -53,15 +49,6 @@
             {
                 span.textContent= "the dark knight rises"
             }
-
-            var link = document.querySelector("#link")
-            link.classList.toggle("dark-mode")
-
-            var link = document.querySelector("#link1")
-            link.classList.toggle("dark-mode")
-
-            var link = document.querySelector("#link2")
-            link.classList.toggle("dark-mode")
         }
         
     </script>

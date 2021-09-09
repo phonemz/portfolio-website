@@ -6,59 +6,18 @@ body{
     font-weight: bold;
     margin: 0;
     color: #1b4965;
-    
-
 }
+
 .change_theme{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#change-theme-text{
-}
+
 #arrow{
     width: 30px;
     height: 30px;
     padding: 10px;
-}
-
-
-.container{
-    margin-top: 10em;
-    display: grid;
-    place-content: center;
-}
-
-.personal_info{
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 40px;
-  
-    
-}
-
-.navmenu{
-    font-size: 36px;
-    margin-left: 0;
-}
-
-ul{
-    padding-left: 0;
-}
-
-li{
-    list-style: none;
-    display: flex;
-    float: left;
-    margin-right: 60px;
-    margin-left: 0;
-}
-a{
-    color: #1b4965
-}
-
-li:hover{
-    transform: scale(1.1);
 }
 
 #moon{
@@ -68,7 +27,41 @@ li:hover{
     cursor: pointer;
 }
 
+.container{
+    margin-top: 10em;
+    display: grid;
+    place-content: center;
+}
+
+#hero{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.navmenu > ul  {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.navmenu > ul > li{
+    transition: transform 500ms;
+}
+.navmenu > ul > li > a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+}
+
+li:hover{
+    transform: scale(1.15);
+}
+
+
+
 .dark-mode{
     background: #1b4965;
     color: #bee9e8;
 }
+
