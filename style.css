@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
 
 body{
     background-color: #bee9e8;
-    font-family: 'Georama';
+    font-family: 'Urbanist', sans-serif;
     font-weight: bold;
     margin: 0;
     color: #1b4965;
@@ -39,6 +40,9 @@ body{
     line-height: 40px;
 }
 
+.navmenu-about, .navmenu{
+    width: 650px;
+}
 .navmenu > ul, .navmenu-about > ul{
     list-style: none;
     display: flex;
@@ -71,7 +75,7 @@ body{
 
 .navmenu-about > ul{
     margin-left: 50px;
-    width: 500px;
+    width: 600px;
 
 }
 
@@ -102,6 +106,51 @@ body{
     height: auto;
     margin: 60px 40px 0 0;
     border-radius: 2%;
+}
+
+.container-contact{
+    display: grid;
+    place-items: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 500px;
+}
+
+.contact-form > h1{
+    margin: 20px 20px 0 40px;
+}
+
+#name, #email, #subject{
+    width: 300px;
+    height: 40px;
+    margin: 20px 20px 0 40px;
+    border-style: unset;
+}
+
+#message{
+    width: 300px;
+    margin: 20px 20px 0 40px;
+    border-style: unset;
+}
+
+#send{
+    width: 100px;
+    height: 40px;
+    margin: 20px 20px 0 40px;
+    border-style: unset;
+    background: #1b4965;
+    color: #bee9e8;
+    font-size: 16px;
+    cursor: pointer;
+  
+}
+::placeholder{
+    font-family: 'Urbanist', open sans-serif;
 }
 
 
