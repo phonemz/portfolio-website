@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 
 body{
@@ -9,40 +10,31 @@ body{
     color: #1b4965;
 }
 
-.change_theme, .change-theme-about{
+.change_theme{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#arrow, #arrow-about{
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
-
 #moon, #moon-about{
     width: 30px;
     height: 30px;
-    margin-right: 10px;
     cursor: pointer;
+    margin: 15px 15px 0 0;
 }
-
 .container{
-    margin-top: 10em;
+    margin-top: 15%;
     display: grid;
     place-content: center;
 }
 
 #hero{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
-.navmenu-about, .navmenu{
-    width: 650px;
-}
+
 .navmenu > ul, .navmenu-about > ul{
     list-style: none;
     display: flex;
@@ -55,7 +47,7 @@ body{
 .navmenu > ul > li > a, .navmenu-about > ul > li > a{
     text-decoration: none;
     color: inherit;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .navmenu > ul > li:hover, .navmenu-about > ul > li:hover{
@@ -70,18 +62,26 @@ body{
 .header-about{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.navmenu-about > ul{
-    margin-left: 50px;
+.navmenu-about{
+    margin:20px 0 0 50px;
     width: 600px;
-
+}
+.navmenu-about ul {
+    margin: 0;
 }
 
 .navmenu-about > ul > li > a{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-right: 40px;
+}
+
+#menu{
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 15px;
+    display: none;
 }
 
 .container-about-me{
@@ -92,13 +92,17 @@ body{
 
 #about-me-header{
     margin: 20px 0 0 50px;
-    font-size: 50px;
+    font-size: 2.8rem;
 }
 
-#about-me-body{
+#about-me-body, #about-me-body3{
     margin: 20px 20px 0 50px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.4em;
+    font-family: 'Roboto','Open Sans';
+}
+.about-me-body2{
+    display: none;
 }
 
 #about-me-photo{
@@ -106,6 +110,10 @@ body{
     height: auto;
     margin: 60px 40px 0 0;
     border-radius: 2%;
+}
+
+.overflow-menu{
+    display: none;
 }
 
 .container-contact{
@@ -118,35 +126,34 @@ body{
     flex-direction: column;
     align-items: flex-start;
     margin-top: 40px;
-    width: 500px;
 }
 
 .contact-form > h1{
-    margin: 20px 20px 0 40px;
+   margin-top: 20px;
 }
 
 #name, #email, #subject{
     width: 300px;
     height: 40px;
-    margin: 20px 20px 0 40px;
+    margin-top: 20px;
     border-style: unset;
     background: #fafafa;
 }
 
 #message{
     width: 300px;
-    margin: 20px 20px 0 40px;
+    margin-top: 20px;
     border-style: unset;
 }
 
 #send{
     width: 100px;
     height: 40px;
-    margin: 20px 20px 0 40px;
+    margin-top: 20px;
     border-style: unset;
     background: #39945c;
     color: #fafafa;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
   
 }
@@ -154,5 +161,108 @@ body{
     font-family: 'Urbanist', open sans-serif;
 }
 
+.blur{
+    filter: blur(14px);
+}
 
+@media only screen and (max-width: 768px){
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        margin: 20% 10% 0 10%;
+    }
+    #hero{
+        line-height: 1.4em;
+    }
+    .navmenu{
+        display: flex;
+        justify-content: center;
+    }
+    .navmenu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navmenu ul li{
+        margin-bottom: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .navmenu ul li a{
+        font-size: 2.5rem;
+    }
+    .header-about{
+        width: 100%;
+    }
+    .navmenu-about{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .container-about-me{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .stop{
+        position: fixed;
+    }
+    #about-me-header{
+        margin: 5% 0 0 15px;
+    }
+    #about-me-body{
+       margin-left: 15px;
+       text-align: justify;
+    }
+    #about-me-photo{
+        width: 60%;
+        margin: 10% 20% 0 20%;
+    }
+    .about-me-body2{
+        display: block;
+        font-size: 1.25rem;
+        line-height: 1.4em;
+        font-family: 'Roboto','Open Sans';
+        margin:0 15px 0 15px;
+        text-align: justify;
+    }
+    #about-me-body3{
+        display: none;
+    }
+    .overflow-menu{
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        display: none;
+        
+    }
+    .overflow-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .overflow-menu ul li{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .overflow-menu ul li a{
+        text-decoration: none;
+        font: 3rem "Urbanist", "San Serief";
+        color: inherit;
+    }
+    .show{
+        display:inline-block;
+    }
 
+    .contact-form,.contact-form h1, #name, #email, #subject, #message{
+        width: 90%;
+        margin: 20px 5% 0 5%;
+    }
+    #send{
+        margin: 20px 0 0 5%;
+    }
+}

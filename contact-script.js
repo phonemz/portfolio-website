@@ -13,15 +13,9 @@ document.querySelector("#moon-about").onclick = function(){
     }
 }
 document.querySelector("#menu").onclick = function () {
-    const page = document.querySelector(".container-about-me");
+    const page = document.querySelector(".container-contact");
     page.classList.toggle("blur");
 
     const overflow = document.querySelector(".overflow-menu");
-    overflow.classList.toggle("show");
-
-    const body = document.querySelector(".container-about-me");
-    body.classList.toggle("stop");    
+    overflow.classList.toggle("show");   
 }
-
-
-
