@@ -4,7 +4,7 @@ document.querySelector("#moon").onclick = function () {
     element.classList.toggle("dark-mode");
     
     const moonicon = document.querySelector("#moon");
-    moonicon.style.filter = 'invert(100%)';
+    moonicon.classList.toggle("invert")
     
 }
 
