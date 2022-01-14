@@ -166,7 +166,7 @@ body{
 }
 
 .invert{
-    filter: invert(100%);
+    filter: invert(70%);
 }
 
 @media only screen and (max-width: 768px){
